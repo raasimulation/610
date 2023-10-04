@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *, body {
+          margin: 0;
+          padding: 0;
+          overflow: scroll;
+        }
+  
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+        ::-webkit-scrollbar-track {
+        border-radius: 0px;
+        }
+        
+
+        ::-webkit-scrollbar-thumb {
+        background: red; 
+        border-radius: 80px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+        width: 200px;
+        }
+
+        ul {
+          list-style: none;
+          display: grid;
+          grid-template-columns: 25vw 20vw 10vw 15vw 35vw;
+          grid-template-rows: 35vh 10vh 5vh 20vh 15vh;
+          grid-template-areas:   
+           
+          "B A A D D"
+          "B A A D D"
+          "B A A D D"
+          "C C C D D"
+          "C C C D D"; 
+        }
+  
+        li {
+          background-color: rgb(255, 255, 255);
+          padding: 50px;
+          border: 5px dotted;
+          border-radius: 50%;
+          font-family:Georgia, 'Times New Roman', Times, serif;
+          font-size: 150px;
+        }
+        
+        li:hover {
+            border-radius: 0;
+        }
+  </style>
+    <head>
+        <title>test</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="initial-scale=0.60, minimum-scale=0.60, maximum-scale=0.60">
+    </head>
+    <body>
+        <ul>
+          <li style="grid-area: A;">is it me</li>
+          <li style="grid-area: B;">IS IT YOU</li>
+          <li style="grid-area: C;">is it them???,</li>
+          <li style="grid-area: D;">WHO IS IT</li>
+          <li style="grid-area: D;">WHO IS NOT</li>
+        </ul>
+      </body>
+</html>

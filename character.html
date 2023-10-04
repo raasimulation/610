@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>lilith</title>
+</head>
+<style>
+    html {
+        background-color: rgb(199, 36, 64);
+        overflow: hidden;
+    }
+
+    .head {
+        background-color: white;
+        width: 350px;
+        height: 600px;
+        border-radius: 45%;
+        box-shadow: inset rgb(144, 6, 52) 30px 0 20px 10px;
+        z-index: 0;
+    }
+
+    .mask {
+        background-color: rgb(91, 51, 91);
+        width: 290px;
+        height: 500px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 50px;
+        border-radius: 45%;
+        box-shadow: inset rgb(54, 32, 54) 20px 0 20px 10px;
+        z-index: 1;
+    }
+
+    .triangle {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-top: 400px solid rgb(27, 27, 27);
+        z-index: 2;
+        top: 150px;
+        left: 295px;
+    }
+
+    .eye1 {
+        position: absolute;
+        top: -80px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 100% 0px;
+        transform: rotate(45deg);
+    }
+
+    .eye2 {
+        position: absolute;
+        top: -150px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 100% 0px;
+        transform: rotate(45deg);
+    }
+
+    .eye3 {
+        position: absolute;
+        top: -250px;
+        left: 30px;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 100% 0px;
+        transform: rotate(45deg);
+    }
+
+    .eye4 {
+        position: absolute;
+        top: -350px;
+        left: 50px;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 100% 0px;
+        transform: rotate(45deg);
+    }
+
+    .eye5 {
+        position: absolute;
+        top: -300px;
+        left: -90px;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 100% 0px;
+        transform: rotate(45deg);
+    }
+
+    .eye6 {
+        position: absolute;
+        top: -180px;
+        left: -90px;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 100% 0px;
+        transform: rotate(45deg);
+    }
+
+    .eye7 {
+        position: absolute;
+        top: -380px;
+        left: -90px;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 100% 0px;
+        transform: rotate(45deg);
+    }
+
+    .pupil {
+        position: absolute;
+        background-color: black;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        left: 15px;
+        margin-right: auto;
+        top: 10px;
+    }
+
+    .neck {
+        position: relative;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 49%, rgba(255, 255, 255, 1) 100%);
+        width: 200px;
+        height: 500px;
+        z-index: -1;
+        top: -300px;
+    }
+
+    .lilith {
+        position: relative;
+        background: linear-gradient(0deg, rgb(144, 6, 52) 50%, rgba(255, 255, 255, 1) 100%);
+        width: 2000px;
+        height: 400px;
+        z-index: -1;
+        top: -300px;
+    }
+</style>
+
+<body>
+    <center>
+        <div class="head">
+            <div class="mask"></div>
+            <div class="triangle">
+                <div class="eye1">
+                    <div class="pupil"></div>
+                </div>
+                <div class="eye2">
+                    <div class="pupil"></div>
+                </div>
+                <div class="eye3">
+                    <div class="pupil"></div>
+                </div>
+                <div class="eye4">
+                    <div class="pupil"></div>
+                </div>
+                <div class="eye5">
+                    <div class="pupil"></div>
+                </div>
+                <div class="eye6">
+                    <div class="pupil"></div>
+                </div>
+                <div class="eye7">
+                    <div class="pupil"></div>
+                </div>
+            </div>
+        </div>
+        <div class="neck"></div>
+        <div class="lilith"></div>
+    </center>
+</body>
+
+</html>
